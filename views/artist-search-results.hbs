@@ -1,0 +1,9 @@
+<div class="search-results--container">
+    {{#each artist_data}}
+    <h2>{{this.name}}</h2>
+    <img src="{{this.images.0.url}}" alt="Card image">
+    <form action="/albums/{{this.id}}" , method="GET">
+        <button type="submit">View Albums</button>
+    </form>
+    {{/each}}
+</div>

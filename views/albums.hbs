@@ -1,0 +1,9 @@
+<div class="albums--container">
+    {{#each albums_data}}
+    <img src="{{this.images.0.url}}" alt="album cover">
+    <h3>Albums for: {{this.name}}</h3>
+    <form action="/tracks/{{this.id}}" method="GET">
+        <button type="submit">View Tracks</button>
+    </form>
+    {{/each}}
+</div>
